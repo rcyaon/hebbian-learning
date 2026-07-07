@@ -1,3 +1,5 @@
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">EE version of writing Harry Potter fan fic <a href="https://t.co/8VipnSJuma">https://t.co/8VipnSJuma</a></p>&mdash; bubble boi (@bubbleboi) <a href="https://x.com/bubbleboi/status/2074527695942320471?ref_src=twsrc%5Etfw">July 7, 2026</a></blockquote> 
+
 ### Progress
 Currently working on the crossbar array.[^1]
 
