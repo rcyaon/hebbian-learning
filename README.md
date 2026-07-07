@@ -1,6 +1,10 @@
+### Progress
 Currently working on the crossbar array.[^1]
 
 Each synapse stores its weight as a voltage on a capacitor, refreshed like DRAM but read out non-destructively.[^2] Each column sums those currents and feeds a 'neuron' that fires once enough builds up.
+
+### Future references
+* LIF neuron: https://snntorch.readthedocs.io/en/latest/tutorials/tutorial_2.html 
 
 [^1]: [Experimental Demonstration of Non-volatile
 Capacitive Crossbar Array for In-memory Computing](https://ieeexplore.ieee.org/document/9720508/)
