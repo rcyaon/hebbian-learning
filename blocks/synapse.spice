@@ -1,0 +1,14 @@
+** sch_path: /foss/designs/hebbian/synapse.sch
+**.subckt synapse VDD VSS WR_EN V_pre I_syn
+*.ipin VDD
+*.ipin VSS
+*.ipin WR_EN
+*.ipin V_pre
+*.opin I_syn
+XM1 VDD WR_EN net1 VSS nfet_03v3 L=2u W=0.28u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+XC1 net1 VSS cap_mim_2f0fF c_width=14e-6 c_length=14e-6 m=1
+XM2 V_pre net1 I_syn VSS nfet_03v3 L=0.28u W=0.56u nf=1 ad='int((nf+1)/2) * W/nf * 0.18u' as='int((nf+2)/2) * W/nf * 0.18u' pd='2*int((nf+1)/2) * (W/nf + 0.18u)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.18u)' nrd='0.18u / W' nrs='0.18u / W' sa=0 sb=0 sd=0 m=1
+**.ends
+.end
